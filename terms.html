@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>LÚMMA — Terms of Service</title>
+  <!-- Google Fonts + clean reset -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fefaf5;
+      color: #1e1b1a;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* header same as main site */
+    .site-header {
+      background-color: #ffffffdd;
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #f0e4d8;
+      padding: 18px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+    .brand-name {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #bc7f5a, #4a2c24);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-decoration: none;
+    }
+    .brand-sup {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #bc7f5a;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2f2a28;
+      transition: color 0.2s;
+      font-size: 0.95rem;
+    }
+    .nav-links a:hover {
+      color: #bc7f5a;
+    }
+    .icon-group {
+      display: flex;
+      gap: 20px;
+    }
+    .icon-group span {
+      font-size: 1.3rem;
+      cursor: default;
+    }
+
+    /* terms hero */
+    .terms-hero {
+      padding: 48px 0 24px;
+      border-bottom: 1px solid #f0e2d8;
+    }
+    .terms-hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #2a231f;
+      margin-bottom: 12px;
+    }
+    .terms-hero p {
+      color: #6b5c52;
+      max-width: 720px;
+      font-size: 1rem;
+    }
+    .last-updated {
+      font-size: 0.8rem;
+      color: #bc7f5a;
+      margin-top: 16px;
+      font-weight: 500;
+    }
+
+    /* terms grid layout: sidebar + content */
+    .terms-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      margin: 48px 0 80px;
+    }
+    .terms-sidebar {
+      flex: 1.2;
+      min-width: 200px;
+      position: sticky;
+      top: 100px;
+      align-self: start;
+    }
+    .terms-sidebar nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    .terms-sidebar nav li {
+      margin-bottom: 18px;
+    }
+    .terms-sidebar nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #4f3e36;
+      transition: color 0.2s;
+      font-size: 0.95rem;
+      display: inline-block;
+      border-left: 2px solid transparent;
+      padding-left: 12px;
+    }
+    .terms-sidebar nav a:hover {
+      color: #bc7f5a;
+      border-left-color: #bc7f5a;
+    }
+    .terms-content {
+      flex: 3;
+    }
+    .legal-section {
+      margin-bottom: 56px;
+      scroll-margin-top: 100px;
+    }
+    .legal-section h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+      color: #2c241f;
+      border-left: 4px solid #bc7f5a;
+      padding-left: 18px;
+    }
+    .legal-section h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 24px 0 12px 0;
+      color: #4a3a32;
+    }
+    .legal-section p, .legal-section li {
+      color: #3e352f;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+    .legal-section ul, .legal-section ol {
+      margin: 16px 0 20px 28px;
+    }
+    .legal-section li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: #faf1ea;
+      padding: 20px 28px;
+      border-radius: 24px;
+      margin: 28px 0;
+      border-left: 3px solid #bc7f5a;
+    }
+    hr {
+      margin: 32px 0;
+      border: none;
+      border-top: 1px solid #eddcd0;
+    }
+
+    /* footer */
+    .footer {
+      background: #f5ede6;
+      border-radius: 40px 40px 0 0;
+      padding: 48px 0 32px;
+      margin-top: 48px;
+    }
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .footer-col h4 {
+      font-weight: 600;
+      margin-bottom: 18px;
+      font-size: 1rem;
+    }
+    .footer-col p, .footer-col a {
+      color: #4d3e36;
+      text-decoration: none;
+      font-size: 0.9rem;
+      line-height: 1.8;
+      display: block;
+    }
+    .footer-col a:hover {
+      color: #bc7f5a;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 0.8rem;
+      color: #9a897e;
+      border-top: 1px solid #e1d3ca;
+      padding-top: 28px;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #1e1b1a;
+      color: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.4rem;
+      opacity: 0.7;
+      transition: 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 99;
+    }
+    .back-to-top:hover {
+      opacity: 1;
+      background: #bc7f5a;
+      transform: translateY(-3px);
+    }
+    @media (max-width: 800px) {
+      .terms-layout { flex-direction: column; }
+      .terms-sidebar { position: static; margin-bottom: 24px; }
+      .terms-hero h1 { font-size: 2rem; }
+      .header-inner { flex-direction: column; align-items: center; }
+      .nav-links { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a href="index.html" style="text-decoration: none; display: flex; align-items: baseline; gap: 4px;">
+        <span class="brand-name">LÚMMA</span>
+        <span class="brand-sup">®</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="icon-group">
+      <span>🔍</span>
+      <span>🛒</span>
+      <span>👤</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <!-- terms hero section -->
+    <div class="terms-hero">
+      <h1>Terms of Service</h1>
+      <p>Welcome to LÚMMA. These terms outline the rules and regulations for the use of our website and the purchase of our handcrafted goods. By accessing this site, you accept these terms in full.</p>
+      <div class="last-updated">📅 Last revised: June 11, 2026</div>
+    </div>
+
+    <!-- two-column layout with anchor navigation -->
+    <div class="terms-layout">
+      <aside class="terms-sidebar">
+        <nav>
+          <ul>
+            <li><a href="#agreement">1. Agreement to Terms</a></li>
+            <li><a href="#products">2. Products & Craftsmanship</a></li>
+            <li><a href="#orders">3. Orders & Pricing</a></li>
+            <li><a href="#shipping">4. Shipping & Repairs</a></li>
+            <li><a href="#returns">5. Returns & Exchanges</a></li>
+            <li><a href="#intellectual">6. Intellectual Property</a></li>
+            <li><a href="#user-conduct">7. User Conduct</a></li>
+            <li><a href="#limitation">8. Limitation of Liability</a></li>
+            <li><a href="#governing">9. Governing Law</a></li>
+            <li><a href="#changes">10. Changes to Terms</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="terms-content">
+        <!-- Section 1 -->
+        <section id="agreement" class="legal-section">
+          <h2>1. Agreement to Terms</h2>
+          <p>By accessing the website at <strong>https://lumma.com</strong> (the “Site”) or making a purchase from LÚMMA, you agree to be bound by these Terms of Service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>
+          <div class="highlight-box">
+            <p>✨ <strong>LÚMMA ethos:</strong> Our terms reflect transparency, respect for artisans, and a commitment to slow, responsible commerce. We invite you to read them with care.</p>
+          </div>
+        </section>
+
+        <!-- Section 2 -->
+        <section id="products" class="legal-section">
+          <h2>2. Products & Craftsmanship</h2>
+          <p>LÚMMA offers objects, garments, and homewares that are either handcrafted or produced in small batches with natural and recycled fibers. Each piece may feature subtle variations in texture, color, or form — these are considered marks of authentic craftsmanship and not defects. We strive to display product images as accurately as possible, but slight differences may occur due to screen settings or natural material irregularities.</p>
+          <h3>Material transparency</h3>
+          <p>We provide detailed sourcing information for every product. If you have specific questions about origin or composition, please contact <a href="#" style="color:#bc7f5a;">care@lumma.com</a>.</p>
+        </section>
+
+        <!-- Section 3 -->
+        <section id="orders" class="legal-section">
+          <h2>3. Orders & Pricing</h2>
+          <p>All prices listed on the Site are in USD and do not include applicable taxes or shipping fees, which will be added at checkout. LÚMMA reserves the right to change prices or discontinue products without notice. We accept major credit cards and digital payments. After placing an order, you will receive an email confirmation; however, we reserve the right to cancel any order due to unforeseen stock limitations or pricing errors. In such cases, you will be fully refunded.</p>
+          <ul>
+            <li><strong>Pre-orders:</strong> Limited pre-order collections are charged at the time of purchase. Estimated shipping dates are provided, but may shift due to artisan production timelines.</li>
+            <li><strong>Promotions:</strong> Discount codes cannot be combined unless explicitly stated.</li>
+          </ul>
+        </section>
+
+        <!-- Section 4 -->
+        <section id="shipping" class="legal-section">
+          <h2>4. Shipping & Repairs</h2>
+          <p>We ship worldwide with carbon-neutral carriers. Delivery estimates are provided at checkout but are not guaranteed. LÚMMA is not responsible for delays caused by customs, weather, or carrier partners. All shipments are insured. Our <strong>Lifetime Repair Pledge</strong> covers any structural damage to LÚMMA products — you may request a repair at no cost (shipping fees may apply). To initiate a repair, contact our support team within a reasonable timeframe.</p>
+          <div class="highlight-box">
+            <p>♻️ <strong>Heirloom guarantee:</strong> We believe in mending, not ending. If your LÚMMA piece needs care, we’ll restore it with the same attention it was originally made with.</p>
+          </div>
+        </section>
+
+        <!-- Section 5 -->
+        <section id="returns" class="legal-section">
+          <h2>5. Returns & Exchanges</h2>
+          <p>We accept returns of unworn, unwashed, and undamaged items within 14 days of delivery. Final sale items (marked as “archive sale” or “intimates”) are not eligible. To start a return, please email our team. Refunds are issued to the original payment method after inspection. Exchanges are subject to availability. For EU customers, statutory withdrawal rights apply.</p>
+          <h3>Non-returnable items</h3>
+          <p>Custom or personalized pieces, gift cards, and items damaged due to misuse are not eligible for return. For any concerns, please reach out — we value your trust.</p>
+        </section>
+
+        <!-- Section 6 -->
+        <section id="intellectual" class="legal-section">
+          <h2>6. Intellectual Property</h2>
+          <p>All content on this Site — including but not limited to text, graphics, logos, product photography, and the LÚMMA brand name — is the exclusive property of LÚMMA and protected by international copyright and trademark laws. You may not reproduce, distribute, or exploit any content without our prior written consent. Unauthorized use may result in legal action.</p>
+        </section>
+
+        <!-- Section 7 -->
+        <section id="user-conduct" class="legal-section">
+          <h2>7. User Conduct</h2>
+          <p>When interacting with our site (reviews, comments, or messages), you agree not to post any unlawful, abusive, defamatory, or obscene material. LÚMMA reserves the right to moderate and remove user-generated content that violates our community standards. By posting content, you grant us a non-exclusive, royalty-free license to use and display it for promotional purposes.</p>
+        </section>
+
+        <!-- Section 8 -->
+        <section id="limitation" class="legal-section">
+          <h2>8. Limitation of Liability</h2>
+          <p>To the maximum extent permitted by law, LÚMMA shall not be liable for any indirect, incidental, or consequential damages arising from the use or inability to use our products or website. Our total liability shall not exceed the amount paid by you for the product in question. Some jurisdictions do not allow limitations on implied warranties, so these limitations may not apply to you.</p>
+          <p>We make no representation that the Site operates error-free or that servers are free of viruses. However, we continuously update security measures to protect your data.</p>
+        </section>
+
+        <!-- Section 9 -->
+        <section id="governing" class="legal-section">
+          <h2>9. Governing Law</h2>
+          <p>These Terms shall be governed by and construed in accordance with the laws of the State of New York, without regard to its conflict of law provisions. Any legal disputes arising from these Terms shall be resolved exclusively in the state or federal courts located in Kings County, New York. For consumers residing in the EU, mandatory consumer protection laws apply regardless of this clause.</p>
+        </section>
+
+        <!-- Section 10 -->
+        <section id="changes" class="legal-section">
+          <h2>10. Changes to Terms</h2>
+          <p>LÚMMA reserves the right to revise these Terms of Service at any time without prior notice. By using this Site, you agree to be bound by the current version of these Terms. We will notify users of material changes via a notice on our homepage or by email. The “last revised” date at the top of this page indicates when updates become effective.</p>
+          <hr>
+          <p>If you have any questions about these Terms, please contact us at: <strong>legal@lumma.com</strong> or write to: LÚMMA, 47 Pearl Street, Brooklyn, NY 11201.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>LÚMMA</h4>
+        <p>Essential objects & garments<br>for considered living.</p>
+        <p style="margin-top: 12px;">📍 Brooklyn / Kyoto</p>
+      </div>
+      <div class="footer-col">
+        
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 LÚMMA — all objects slowly made. 獨特的存在
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" title="Back to top">↑</a>
+
+<script>
+  (function() {
+    // smooth scroll for anchor links and dynamic copyright year
+    const yearEl = document.querySelector('.copyright');
+    if(yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.innerHTML = `© ${currentYear} LÚMMA — all objects slowly made. 獨特的存在`;
+    }
+
+    // Anchor links smooth scroll
+    document.querySelectorAll('.terms-sidebar a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+          const offset = 90;
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: elementPosition - offset,
+            behavior: 'smooth'
+          });
+          // update url hash without jumping
+          history.pushState(null, null, targetId);
+        }
+      });
+    });
+
+    // subtle back to top smooth
+    const backBtn = document.querySelector('.back-to-top');
+    if(backBtn) {
+      backBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    // Optional: update active link highlight on scroll (simple)
+    const sections = document.querySelectorAll('.legal-section');
+    const navLinks = document.querySelectorAll('.terms-sidebar nav a');
+    function highlightNav() {
+      let scrollPos = window.scrollY + 120;
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+        if(scrollPos >= sectionTop && scrollPos < sectionBottom) {
+          const currentId = section.getAttribute('id');
+          navLinks.forEach(link => {
+            link.style.borderLeftColor = 'transparent';
+            link.style.fontWeight = '500';
+            if(link.getAttribute('href') === `#${currentId}`) {
+              link.style.borderLeftColor = '#bc7f5a';
+              link.style.fontWeight = '600';
+            }
+          });
+        }
+      });
+    }
+    window.addEventListener('scroll', highlightNav);
+    highlightNav();
+  })();
+</script>
+</body>
+</html>

@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>LÚMMA — Privacy Policy</title>
+  <!-- Google Fonts + clean reset -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #fefaf5;
+      color: #1e1b1a;
+      line-height: 1.5;
+    }
+
+    .container {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* header — consistent with brand */
+    .site-header {
+      background-color: #ffffffdd;
+      backdrop-filter: blur(8px);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      border-bottom: 1px solid #f0e4d8;
+      padding: 18px 0;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: baseline;
+      gap: 4px;
+    }
+    .brand-name {
+      font-size: 1.9rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      background: linear-gradient(135deg, #bc7f5a, #4a2c24);
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: transparent;
+      text-decoration: none;
+    }
+    .brand-sup {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: #bc7f5a;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 32px;
+      align-items: center;
+    }
+    .nav-links a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #2f2a28;
+      transition: color 0.2s;
+      font-size: 0.95rem;
+    }
+    .nav-links a:hover {
+      color: #bc7f5a;
+    }
+    .icon-group {
+      display: flex;
+      gap: 20px;
+    }
+    .icon-group span {
+      font-size: 1.3rem;
+      cursor: default;
+    }
+
+    /* privacy hero */
+    .privacy-hero {
+      padding: 48px 0 24px;
+      border-bottom: 1px solid #f0e2d8;
+    }
+    .privacy-hero h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      color: #2a231f;
+      margin-bottom: 12px;
+    }
+    .privacy-hero p {
+      color: #6b5c52;
+      max-width: 720px;
+      font-size: 1rem;
+    }
+    .last-updated {
+      font-size: 0.8rem;
+      color: #bc7f5a;
+      margin-top: 16px;
+      font-weight: 500;
+    }
+
+    /* two-column layout */
+    .privacy-layout {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 48px;
+      margin: 48px 0 80px;
+    }
+    .privacy-sidebar {
+      flex: 1.2;
+      min-width: 200px;
+      position: sticky;
+      top: 100px;
+      align-self: start;
+    }
+    .privacy-sidebar nav ul {
+      list-style: none;
+      padding: 0;
+    }
+    .privacy-sidebar nav li {
+      margin-bottom: 18px;
+    }
+    .privacy-sidebar nav a {
+      text-decoration: none;
+      font-weight: 500;
+      color: #4f3e36;
+      transition: color 0.2s;
+      font-size: 0.95rem;
+      display: inline-block;
+      border-left: 2px solid transparent;
+      padding-left: 12px;
+    }
+    .privacy-sidebar nav a:hover {
+      color: #bc7f5a;
+      border-left-color: #bc7f5a;
+    }
+    .privacy-content {
+      flex: 3;
+    }
+    .legal-section {
+      margin-bottom: 56px;
+      scroll-margin-top: 100px;
+    }
+    .legal-section h2 {
+      font-size: 1.6rem;
+      font-weight: 600;
+      letter-spacing: -0.01em;
+      margin-bottom: 20px;
+      color: #2c241f;
+      border-left: 4px solid #bc7f5a;
+      padding-left: 18px;
+    }
+    .legal-section h3 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin: 24px 0 12px 0;
+      color: #4a3a32;
+    }
+    .legal-section p, .legal-section li {
+      color: #3e352f;
+      margin-bottom: 14px;
+      line-height: 1.6;
+    }
+    .legal-section ul, .legal-section ol {
+      margin: 16px 0 20px 28px;
+    }
+    .legal-section li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background: #faf1ea;
+      padding: 20px 28px;
+      border-radius: 24px;
+      margin: 28px 0;
+      border-left: 3px solid #bc7f5a;
+    }
+    hr {
+      margin: 32px 0;
+      border: none;
+      border-top: 1px solid #eddcd0;
+    }
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+    }
+    .data-table th, .data-table td {
+      text-align: left;
+      padding: 14px 16px;
+      border-bottom: 1px solid #f0e2d8;
+    }
+    .data-table th {
+      background: #f9f0e9;
+      font-weight: 600;
+      color: #3b2c25;
+    }
+    .data-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    /* footer */
+    .footer {
+      background: #f5ede6;
+      border-radius: 40px 40px 0 0;
+      padding: 48px 0 32px;
+      margin-top: 48px;
+    }
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 40px;
+    }
+    .footer-col h4 {
+      font-weight: 600;
+      margin-bottom: 18px;
+      font-size: 1rem;
+    }
+    .footer-col p, .footer-col a {
+      color: #4d3e36;
+      text-decoration: none;
+      font-size: 0.9rem;
+      line-height: 1.8;
+      display: block;
+    }
+    .footer-col a:hover {
+      color: #bc7f5a;
+    }
+    .copyright {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 0.8rem;
+      color: #9a897e;
+      border-top: 1px solid #e1d3ca;
+      padding-top: 28px;
+    }
+    .back-to-top {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      background: #1e1b1a;
+      color: white;
+      width: 44px;
+      height: 44px;
+      border-radius: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-decoration: none;
+      font-size: 1.4rem;
+      opacity: 0.7;
+      transition: 0.2s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      z-index: 99;
+    }
+    .back-to-top:hover {
+      opacity: 1;
+      background: #bc7f5a;
+      transform: translateY(-3px);
+    }
+    @media (max-width: 800px) {
+      .privacy-layout { flex-direction: column; }
+      .privacy-sidebar { position: static; margin-bottom: 24px; }
+      .privacy-hero h1 { font-size: 2rem; }
+      .header-inner { flex-direction: column; align-items: center; }
+      .nav-links { gap: 24px; }
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a href="index.html" style="text-decoration: none; display: flex; align-items: baseline; gap: 4px;">
+        <span class="brand-name">LÚMMA</span>
+        <span class="brand-sup">®</span>
+      </a>
+    </div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+      <a href="about.html">About Us</a>
+    </div>
+    <div class="icon-group">
+      <span>🔍</span>
+      <span>🛒</span>
+      <span>👤</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <!-- privacy hero section -->
+    <div class="privacy-hero">
+      <h1>Privacy Policy</h1>
+      <p>At LÚMMA, your privacy is a matter of deep respect. This policy describes how we collect, use, and protect your personal information when you interact with our website, purchase our handcrafted goods, or join our community.</p>
+      <div class="last-updated">🔒 Last revised: June 11, 2026</div>
+    </div>
+
+    <!-- two-column layout with anchor navigation -->
+    <div class="privacy-layout">
+      <aside class="privacy-sidebar">
+        <nav>
+          <ul>
+            <li><a href="#intro">1. Introduction & Scope</a></li>
+            <li><a href="#data-collect">2. What We Collect</a></li>
+            <li><a href="#usage">3. How We Use Your Data</a></li>
+            <li><a href="#sharing">4. Sharing & Disclosure</a></li>
+            <li><a href="#cookies">5. Cookies & Tracking</a></li>
+            <li><a href="#rights">6. Your Privacy Rights</a></li>
+            <li><a href="#security">7. Data Security & Retention</a></li>
+            <li><a href="#children">8. Children's Privacy</a></li>
+            <li><a href="#international">9. International Transfers</a></li>
+            <li><a href="#changes-policy">10. Changes to This Policy</a></li>
+            <li><a href="#contact">11. Contact Us</a></li>
+          </ul>
+        </nav>
+      </aside>
+
+      <div class="privacy-content">
+        <!-- Section 1 -->
+        <section id="intro" class="legal-section">
+          <h2>1. Introduction & Scope</h2>
+          <p>LÚMMA ("we", "us", "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we handle information collected via our website <strong>https://lumma.com</strong> (the "Site"), email communications, and any in-person interactions such as events or studio visits. It applies to all users, customers, and visitors.</p>
+          <div class="highlight-box">
+            <p>🌱 <strong>Our promise:</strong> We will never sell your personal data to third parties. Any information shared is used only to provide you with a thoughtful, secure, and seamless experience.</p>
+          </div>
+        </section>
+
+        <!-- Section 2: data collection -->
+        <section id="data-collect" class="legal-section">
+          <h2>2. What We Collect</h2>
+          <p>To process orders, improve our services, and communicate with you, we may collect the following categories of personal information:</p>
+          <table class="data-table">
+            <thead>
+              <tr><th>Category</th><th>Examples</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>Identity Data</td><td>Full name, date of birth (optional), account username</td></tr>
+              <tr><td>Contact Data</td><td>Email address, shipping/billing address, phone number</td></tr>
+              <tr><td>Transaction Data</td><td>Purchase history, payment details (processed securely via PCI-DSS compliant gateways), returns</td></tr>
+              <tr><td>Technical Data</td><td>IP address, browser type, device identifiers, referral source</td></tr>
+              <tr><td>Profile Data</td><td>Your preferences, saved addresses, wishlist, product reviews</td></tr>
+              <tr><td>Marketing Data</td><td>Newsletter subscriptions, survey responses, gift card history</td></tr>
+            </tbody>
+          </table>
+          <p>We do not knowingly collect sensitive data (e.g., racial or ethnic origin, political opinions, biometric data) unless required for legal compliance.</p>
+        </section>
+
+        <!-- Section 3: usage -->
+        <section id="usage" class="legal-section">
+          <h2>3. How We Use Your Data</h2>
+          <p>LÚMMA uses your personal information only for legitimate purposes:</p>
+          <ul>
+            <li><strong>Order fulfillment:</strong> process payments, ship products, manage repairs and returns.</li>
+            <li><strong>Customer support:</strong> respond to inquiries, handle warranty or lifetime repair requests.</li>
+            <li><strong>Improving our craft:</strong> analyze purchase patterns to curate collections and enhance user experience.</li>
+            <li><strong>Marketing communications:</strong> send you updates about new arrivals, studio notes, or exclusive events (only with your consent).</li>
+            <li><strong>Legal obligations:</strong> fraud prevention, tax reporting, and compliance with applicable laws.</li>
+          </ul>
+          <p>We never use automated decision-making that significantly affects you without transparency. You can opt out of marketing emails at any time via the unsubscribe link.</p>
+        </section>
+
+        <!-- Section 4: sharing -->
+        <section id="sharing" class="legal-section">
+          <h2>4. Sharing & Disclosure</h2>
+          <p>We may share your data with trusted third parties only when necessary:</p>
+          <ul>
+            <li><strong>Service providers:</strong> shipping carriers (e.g., DHL, USPS), payment processors (Stripe, PayPal), IT hosting, and email platforms (Klaviyo). All partners are bound by data protection agreements.</li>
+            <li><strong>Legal requirements:</strong> if required by law, court order, or to protect the rights, property, or safety of LÚMMA, our customers, or others.</li>
+            <li><strong>Business transfers:</strong> in the event of a merger, acquisition, or asset sale, your data may be transferred with notice.</li>
+          </ul>
+          <div class="highlight-box">
+            <p>📦 <strong>Shipping transparency:</strong> We share only your name, address, and tracking info with carriers — no marketing data or payment details.</p>
+          </div>
+        </section>
+
+        <!-- Section 5: cookies -->
+        <section id="cookies" class="legal-section">
+          <h2>5. Cookies & Tracking</h2>
+          <p>Our Site uses cookies and similar technologies to enhance functionality, analyze site traffic, and remember preferences. You can control cookies through your browser settings. We use:</p>
+          <ul>
+            <li><strong>Essential cookies:</strong> required for cart, checkout, and account security.</li>
+            <li><strong>Analytics cookies:</strong> to understand how visitors interact with our site (via privacy-friendly analytics).</li>
+            <li><strong>Preference cookies:</strong> remember language, currency, and wishlist items.</li>
+          </ul>
+          <p>Third-party services like embedded videos (Vimeo) may also set cookies. By using our Site, you consent to our use of cookies as described. You may disable non-essential cookies, but some features may not work optimally.</p>
+        </section>
+
+        <!-- Section 6: your privacy rights -->
+        <section id="rights" class="legal-section">
+          <h2>6. Your Privacy Rights</h2>
+          <p>Depending on your location (EEA, UK, California, etc.), you may have the following rights regarding your personal data:</p>
+          <ul>
+            <li><strong>Access:</strong> request a copy of the data we hold about you.</li>
+            <li><strong>Rectification:</strong> correct inaccurate or incomplete information.</li>
+            <li><strong>Erasure ("right to be forgotten"):</strong> request deletion of your data, subject to legal retention periods.</li>
+            <li><strong>Restriction:</strong> limit how we use your data.</li>
+            <li><strong>Portability:</strong> receive your data in a structured, machine-readable format.</li>
+            <li><strong>Objection:</strong> opt out of direct marketing or profiling.</li>
+          </ul>
+          <p>To exercise these rights, email <strong>privacy@lumma.com</strong>. We will respond within 30 days. No fee will be charged unless requests are manifestly unfounded or excessive.</p>
+        </section>
+
+        <!-- Section 7: security & retention -->
+        <section id="security" class="legal-section">
+          <h2>7. Data Security & Retention</h2>
+          <p>We implement industry-standard security measures — including SSL encryption, firewalls, and restricted access — to protect your data. However, no internet transmission is 100% secure. We retain personal information only as long as necessary:</p>
+          <ul>
+            <li><strong>Order data:</strong> 7 years for tax and warranty purposes.</li>
+            <li><strong>Marketing data:</strong> until you unsubscribe or request deletion.</li>
+            <li><strong>Customer service records:</strong> up to 3 years after last interaction.</li>
+          </ul>
+          <p>We anonymize analytics data when possible. In case of a data breach, we will notify affected users and regulators as required by law.</p>
+        </section>
+
+        <!-- Section 8: children -->
+        <section id="children" class="legal-section">
+          <h2>8. Children's Privacy</h2>
+          <p>LÚMMA does not knowingly collect personal information from children under the age of 16. If you are a parent or guardian and believe your child has provided us with data, please contact us immediately. We will take steps to delete such information.</p>
+        </section>
+
+        <!-- Section 9: international transfers -->
+        <section id="international" class="legal-section">
+          <h2>9. International Transfers</h2>
+          <p>Our business operates globally. If you are located outside of the United States, your data may be transferred to and processed in the US or other jurisdictions where we or our service providers operate. We ensure appropriate safeguards (such as Standard Contractual Clauses) are in place to protect your data in accordance with this Privacy Policy and applicable law.</p>
+        </section>
+
+        <!-- Section 10: changes to policy -->
+        <section id="changes-policy" class="legal-section">
+          <h2>10. Changes to This Policy</h2>
+          <p>We may update this Privacy Policy from time to time to reflect changes in our practices or legal requirements. The latest version will always be posted on this page, and the "Last revised" date will be updated. For significant changes, we will notify you via email or a prominent notice on our website.</p>
+          <hr>
+          <p>We encourage you to review this policy periodically.</p>
+        </section>
+
+        <!-- Section 11: contact -->
+        <section id="contact" class="legal-section">
+          <h2>11. Contact Us</h2>
+          <p>If you have any questions, concerns, or requests regarding this Privacy Policy or your personal data, please reach out to our Data Protection Officer:</p>
+          <div class="highlight-box">
+            <p><strong>LÚMMA Privacy Team</strong><br>
+            📧 privacy@lumma.com<br>
+            📍 47 Pearl Street, Brooklyn, NY 11201, USA<br>
+            📞 +1 (800) 555-LUMA (weekdays 10am–5pm EST)</p>
+          </div>
+          <p>For EU/UK residents, you also have the right to lodge a complaint with your local supervisory authority.</p>
+        </section>
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h4>LÚMMA</h4>
+        <p>Essential objects & garments<br>for considered living.</p>
+        <p style="margin-top: 12px;">📍 Brooklyn / Kyoto</p>
+      </div>
+      <div class="footer-col">
+        
+      </div>
+    </div>
+    <div class="copyright">
+      © 2026 LÚMMA — all objects slowly made. 獨特的存在
+    </div>
+  </div>
+</footer>
+
+<a href="#" class="back-to-top" title="Back to top">↑</a>
+
+<script>
+  (function() {
+    // dynamic copyright year
+    const yearEl = document.querySelector('.copyright');
+    if(yearEl) {
+      const currentYear = new Date().getFullYear();
+      yearEl.innerHTML = `© ${currentYear} LÚMMA — all objects slowly made. 獨特的存在`;
+    }
+
+    // smooth scroll for anchor links
+    document.querySelectorAll('.privacy-sidebar a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetElement = document.querySelector(targetId);
+        if(targetElement) {
+          const offset = 90;
+          const elementPosition = targetElement.getBoundingClientRect().top + window.scrollY;
+          window.scrollTo({
+            top: elementPosition - offset,
+            behavior: 'smooth'
+          });
+          history.pushState(null, null, targetId);
+        }
+      });
+    });
+
+    // back to top smooth
+    const backBtn = document.querySelector('.back-to-top');
+    if(backBtn) {
+      backBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      });
+    }
+
+    // highlight active section on scroll
+    const sections = document.querySelectorAll('.legal-section');
+    const navLinks = document.querySelectorAll('.privacy-sidebar nav a');
+    function highlightNav() {
+      let scrollPos = window.scrollY + 120;
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionBottom = sectionTop + section.offsetHeight;
+        if(scrollPos >= sectionTop && scrollPos < sectionBottom) {
+          const currentId = section.getAttribute('id');
+          navLinks.forEach(link => {
+            link.style.borderLeftColor = 'transparent';
+            link.style.fontWeight = '500';
+            if(link.getAttribute('href') === `#${currentId}`) {
+              link.style.borderLeftColor = '#bc7f5a';
+              link.style.fontWeight = '600';
+            }
+          });
+        }
+      });
+    }
+    window.addEventListener('scroll', highlightNav);
+    highlightNav();
+  })();
+</script>
+</body>
+</html>
